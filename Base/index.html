@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0b1220" />
+    <title>Cafeteria Maria</title>
+    <meta
+      name="description"
+      content="Cafeteria Maria: Coffe premium en Barranquilla. Servicios, galería, testimonios y contacto."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip" href="#hero">Saltar al contenido</a>
+
+    <header class="header" data-header>
+      <div class="container header__inner">
+        <a class="brand" href="#hero" aria-label="Ir al inicio">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">CAFETERIA MARIA</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal" data-nav>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#hero">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#services">Servicios</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#gallery">Galería</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#testimonials">Testimonios</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a class="btn btn--primary btn--sm" href="#contact">Agendar</a>
+
+          <button
+            class="burger"
+            type="button"
+            aria-label="Abrir menú"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            data-burger
+          >
+            <span class="burger__lines" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile" id="mobileMenu" data-mobile hidden>
+        <div
+          class="mobile__panel"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menú móvil"
+        >
+          <div class="mobile__top">
+            <span class="mobile__brand">[[NOMBRE DE MARCA]]</span>
+            <button
+              class="icon-btn"
+              type="button"
+              aria-label="Cerrar menú"
+              data-close
+            >
+              <span aria-hidden="true">✕</span>
+            </button>
+          </div>
+
+          <ul class="mobile__list">
+            <li><a class="mobile__link" href="#hero">Inicio</a></li>
+            <li><a class="mobile__link" href="#services">Servicios</a></li>
+            <li><a class="mobile__link" href="#gallery">Galería</a></li>
+            <li>
+              <a class="mobile__link" href="#testimonials">Testimonios</a>
+            </li>
+            <li><a class="mobile__link" href="#contact">Contacto</a></li>
+          </ul>
+
+          <div class="mobile__cta">
+            <a class="btn btn--primary" href="#contact">Pedir información</a>
+            <a class="btn btn--ghost" href="#services">Ver servicios</a>
+          </div>
+        </div>
+        <button
+          class="mobile__backdrop"
+          type="button"
+          aria-label="Cerrar"
+          data-backdrop
+        ></button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="section hero" id="hero">
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <p class="badge">COFFE PREMIUN · BARRANQUILLA</p>
+            <h1 class="hero__title">
+              Eleva tu experiencia con
+              <span class="text-gradient">Cafeteria Maria</span>
+            </h1>
+            <p class="hero__subtitle">
+              Una landing premium lista para reutilizar. Cambia textos e
+              imágenes y tendrás sitio nuevo en minutos.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">Reservar / Cotizar</a>
+              <a class="btn btn--ghost" href="#services">Ver servicios</a>
+            </div>
+
+            <div class="hero__stats flow-sm">
+              <div class="stat card card--soft">
+                <span class="stat__num">+250</span>
+                <span class="stat__label">Clientes felices</span>
+              </div>
+              <div class="stat card card--soft">
+                <span class="stat__num">4.9★</span>
+                <span class="stat__label">Calificación promedio</span>
+              </div>
+              <div class="stat card card--soft">
+                <span class="stat__num">24/7</span>
+                <span class="stat__label">Atención por WhatsApp</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__media reveal">
+            <div class="media card">
+              <div class="media__glow" aria-hidden="true"></div>
+              <div
+                class="media__img"
+                role="img"
+                aria-label="Imagen destacada"
+              ></div>
+
+              <div class="media__chips">
+                <span class="chip">Premium</span>
+                <span class="chip">Rápido</span>
+                <span class="chip">Confiable</span>
+              </div>
+
+              <div class="media__note">
+                <span class="dot" aria-hidden="true"></span>
+                <span>Agenda hoy y recibe atención prioritaria</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Servicios principales</h2>
+            <p class="section__subtitle">
+              Estructura lista para que cambies títulos y descripciones según tu
+              negocio.
+            </p>
+          </div>
+
+          <div class="grid grid--3 reveal">
+            <article class="card service">
+              <div class="icon" aria-hidden="true">⚡</div>
+              <h3 class="card__title">Servicio 1</h3>
+              <p class="card__text">
+                Describe tu servicio con claridad y enfoque en beneficios.
+              </p>
+              <ul class="list">
+                <li>Incluye un diferencial</li>
+                <li>Tiempo estimado</li>
+                <li>Garantía o soporte</li>
+              </ul>
+            </article>
+
+            <article class="card service">
+              <div class="icon" aria-hidden="true">✨</div>
+              <h3 class="card__title">Servicio 2</h3>
+              <p class="card__text">
+                Perfecto para destacar lo que más se vende o lo más importante.
+              </p>
+              <ul class="list">
+                <li>Mejor relación valor</li>
+                <li>Materiales premium</li>
+                <li>Atención personalizada</li>
+              </ul>
+            </article>
+
+            <article class="card service">
+              <div class="icon" aria-hidden="true">🛡️</div>
+              <h3 class="card__title">Servicio 3</h3>
+              <p class="card__text">
+                Aumenta confianza con procesos, calidad y resultados.
+              </p>
+              <ul class="list">
+                <li>Proceso claro</li>
+                <li>Resultados medibles</li>
+                <li>Soporte post-servicio</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="callout card card--soft reveal">
+            <div class="callout__content">
+              <h3 class="callout__title">¿Necesitas algo a la medida?</h3>
+              <p class="callout__text">
+                Escribe y te respondemos con una propuesta rápida.
+              </p>
+            </div>
+            <a class="btn btn--primary" href="#contact">Hablar ahora</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Galería</h2>
+            <p class="section__subtitle">
+              Reemplaza estos placeholders por fotos reales del negocio.
+            </p>
+          </div>
+
+          <div class="grid grid--gallery reveal">
+            <figure class="shot card">
+              <div class="shot__img" aria-hidden="true"></div>
+              <figcaption class="shot__cap">
+                <span class="shot__title">Trabajo destacado</span>
+                <span class="shot__meta">[[CIUDAD]] · [[NOMBRE DE MARCA]]</span>
+              </figcaption>
+            </figure>
+
+            <figure class="shot card">
+              <div class="shot__img shot__img--2" aria-hidden="true"></div>
+              <figcaption class="shot__cap">
+                <span class="shot__title">Detalle premium</span>
+                <span class="shot__meta">Calidad + experiencia</span>
+              </figcaption>
+            </figure>
+
+            <figure class="shot card">
+              <div class="shot__img shot__img--3" aria-hidden="true"></div>
+              <figcaption class="shot__cap">
+                <span class="shot__title">Antes / Después</span>
+                <span class="shot__meta">Resultados visibles</span>
+              </figcaption>
+            </figure>
+
+            <figure class="shot card">
+              <div class="shot__img shot__img--4" aria-hidden="true"></div>
+              <figcaption class="shot__cap">
+                <span class="shot__title">Equipo</span>
+                <span class="shot__meta">Atención profesional</span>
+              </figcaption>
+            </figure>
+
+            <figure class="shot card">
+              <div class="shot__img shot__img--5" aria-hidden="true"></div>
+              <figcaption class="shot__cap">
+                <span class="shot__title">Ambiente</span>
+                <span class="shot__meta">Espacio cómodo</span>
+              </figcaption>
+            </figure>
+
+            <figure class="shot card">
+              <div class="shot__img shot__img--6" aria-hidden="true"></div>
+              <figcaption class="shot__cap">
+                <span class="shot__title">Servicio rápido</span>
+                <span class="shot__meta">Agenda flexible</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Lo que dicen nuestros clientes</h2>
+            <p class="section__subtitle">
+              Testimonios cortos que aumentan confianza y conversiones.
+            </p>
+          </div>
+
+          <div class="grid grid--3 reveal">
+            <article class="card quote">
+              <p class="quote__text">
+                “Excelente atención, todo súper rápido y con un resultado
+                impecable.”
+              </p>
+              <div class="quote__foot">
+                <span class="avatar" aria-hidden="true"></span>
+                <div>
+                  <p class="quote__name">Cliente 1</p>
+                  <p class="quote__meta">[[CIUDAD]] · 5★</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card quote">
+              <p class="quote__text">
+                “Se nota la calidad. Me explicaron todo y quedé muy feliz con el
+                servicio.”
+              </p>
+              <div class="quote__foot">
+                <span class="avatar avatar--2" aria-hidden="true"></span>
+                <div>
+                  <p class="quote__name">Cliente 2</p>
+                  <p class="quote__meta">Recomendado · 5★</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card quote">
+              <p class="quote__text">
+                “La mejor opción en la ciudad. Muy profesionales y con buen
+                gusto.”
+              </p>
+              <div class="quote__foot">
+                <span class="avatar avatar--3" aria-hidden="true"></span>
+                <div>
+                  <p class="quote__name">Cliente 3</p>
+                  <p class="quote__meta">Volvería · 5★</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 class="section__title">Contacto</h2>
+            <p class="section__subtitle">
+              Escríbenos y te respondemos lo antes posible.
+            </p>
+          </div>
+
+          <div class="grid grid--contact reveal">
+            <form class="card form" id="contactForm" novalidate>
+              <div class="form__row">
+                <label class="label" for="name">Nombre</label>
+                <input
+                  class="input"
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Tu nombre"
+                />
+                <p
+                  class="field-msg"
+                  data-field-msg="name"
+                  aria-live="polite"
+                ></p>
+              </div>
+
+              <div class="form__row">
+                <label class="label" for="email">Email</label>
+                <input
+                  class="input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="tu@email.com"
+                />
+                <p
+                  class="field-msg"
+                  data-field-msg="email"
+                  aria-live="polite"
+                ></p>
+              </div>
+
+              <div class="form__row">
+                <label class="label" for="message">Mensaje</label>
+                <textarea
+                  class="input input--area"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Cuéntanos qué necesitas..."
+                ></textarea>
+                <p
+                  class="field-msg"
+                  data-field-msg="message"
+                  aria-live="polite"
+                ></p>
+              </div>
+
+              <div class="form__actions">
+                <button class="btn btn--primary" type="submit">
+                  Enviar mensaje
+                </button>
+                <p class="form__status" id="formStatus" aria-live="polite"></p>
+              </div>
+
+              <p class="form__fine">
+                Al enviar aceptas ser contactado por [[NOMBRE DE MARCA]].
+              </p>
+            </form>
+
+            <aside class="card info">
+              <h3 class="card__title">Información</h3>
+              <p class="card__text">
+                Estamos en <strong>[[CIUDAD]]</strong>. Atención con cita previa
+                o por orden de llegada (según tu negocio).
+              </p>
+
+              <div class="info__list">
+                <div class="info__item">
+                  <span class="info__icon" aria-hidden="true">📍</span>
+                  <div>
+                    <p class="info__label">Dirección</p>
+                    <p class="info__value">
+                      Calle / Carrera, Barrio (editable)
+                    </p>
+                  </div>
+                </div>
+
+                <div class="info__item">
+                  <span class="info__icon" aria-hidden="true">🕒</span>
+                  <div>
+                    <p class="info__label">Horario</p>
+                    <p class="info__value">Lun–Sáb · 9:00am – 7:00pm</p>
+                  </div>
+                </div>
+
+                <div class="info__item">
+                  <span class="info__icon" aria-hidden="true">💬</span>
+                  <div>
+                    <p class="info__label">WhatsApp</p>
+                    <p class="info__value">
+                      <a class="link" href="#" aria-label="WhatsApp"
+                        >+57 300 000 0000</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="info__item">
+                  <span class="info__icon" aria-hidden="true">✉️</span>
+                  <div>
+                    <p class="info__label">Correo</p>
+                    <p class="info__value">
+                      <a class="link" href="mailto:contacto@tumarca.com"
+                        >contacto@tumarca.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info__cta">
+                <a class="btn btn--ghost" href="#services">Ver servicios</a>
+                <a class="btn btn--primary" href="#hero">Volver arriba</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__copy">
+          © <span id="year"></span> Cafeteria Maria. Todos los derechos
+          reservados.
+        </p>
+        <div class="footer__links">
+          <a class="footer__link" href="#services">Servicios</a>
+          <a class="footer__link" href="#gallery">Galería</a>
+          <a class="footer__link" href="#contact">Contacto</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
